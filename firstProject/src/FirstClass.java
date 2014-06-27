@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class FirstClass {
 
@@ -6,6 +8,7 @@ public class FirstClass {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<>();
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter n: ");
 		int n = scan.nextInt();
@@ -13,7 +16,11 @@ public class FirstClass {
 		for (int i = 2; i <= n; i++)
 			if (isPrime(i)) 
 				if(isPrime(reverse(i)))
-					System.out.print(reverse(i) + " ");
+					list.add(reverse(i));
+
+		Collections.sort(list);
+
+		System.out.println(list);
 	}
 
 	public static boolean isPrime(int n) {
