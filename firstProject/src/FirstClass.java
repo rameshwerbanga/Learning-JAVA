@@ -13,7 +13,7 @@ public class FirstClass {
 		for (int i = 2; i <= n; i++)
 			if (isPrime(i)) 
 				if(isPrime(reverse(i)))
-					System.out.println(reverse(i));
+					System.out.print(reverse(i) + " ");
 	}
 
 	public static boolean isPrime(int n) {
