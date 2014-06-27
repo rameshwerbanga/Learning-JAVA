@@ -27,4 +27,7 @@ public class FirstClass {
 		return true; 	
 	}
 
+	public static int reverse(int n) {
+		return Integer.parseInt(new StringBuffer(n).reverse().toString());
+	}
 }
