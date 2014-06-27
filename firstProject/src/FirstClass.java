@@ -7,7 +7,7 @@ public class FirstClass {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a=0, i;
+		/*int a=0, i;
 		Scanner src = new Scanner(System.in);
 		int x = src.nextInt();
 		for(i=1; i<= x*2;i+=2){
@@ -15,7 +15,11 @@ public class FirstClass {
 				//i=i+1;
 		}
 		System.out.println(a);
-		
+		*/
+
+		for (int i = 2; i <= 20; i++)
+			if (isPrime(i)) 
+				System.out.println(reverse(i));
 	
 	}
 
@@ -28,6 +32,6 @@ public class FirstClass {
 	}
 
 	public static int reverse(int n) {
-		return Integer.parseInt(new StringBuffer(n).reverse().toString());
+		return Integer.parseInt(new StringBuffer(String.valueOf(n)).reverse().toString());
 	}
 }
