@@ -6,21 +6,14 @@ public class FirstClass {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		/*int a=0, i;
-		Scanner src = new Scanner(System.in);
-		int x = src.nextInt();
-		for(i=1; i<= x*2;i+=2){
-				a += i;
-				//i=i+1;
-		}
-		System.out.println(a);
-		*/
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter n: ");
+		int n = scan.nextInt();
 
-		for (int i = 2; i <= 20; i++)
+		for (int i = 2; i <= n; i++)
 			if (isPrime(i)) 
-				System.out.println(reverse(i));
-	
+				if(isPrime(reverse(i)))
+					System.out.println(reverse(i));
 	}
 
 	public static boolean isPrime(int n) {
