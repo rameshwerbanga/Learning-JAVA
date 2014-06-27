@@ -17,9 +17,9 @@ public class FirstClass {
 			if (isPrime(i)) 
 				if(isPrime(reverse(i)))
 					list.add(reverse(i));
-
+	
 		Collections.sort(list);
-
+		Collections.reverse(list);
 		System.out.println(list);
 	}
 
